@@ -1,6 +1,6 @@
 'use strict'
 
-export function extendCanvas () {
+export default function extendCanvas () {
   CanvasRenderingContext2D.prototype.wrapText = function (text, x, y, width, lineHeight) {
     if (typeof text !== 'string') throw new Error('text not string')
 
