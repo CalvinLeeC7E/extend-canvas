@@ -9,16 +9,11 @@ const resolve = dir => path.join(__dirname, '../', dir)
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  entry: {
-    index: './index.js'
-  },
+  entry: './index.js',
   output: {
     path: resolve('lib'),
-    filename: '[name].js',
-    libraryTarget: 'umd',
-    library: 'index',
-    libraryExport: 'default',
-    globalObject: 'this'
+    filename: 'bundle.js',
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [

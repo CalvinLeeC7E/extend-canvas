@@ -2,7 +2,7 @@
   "name": "extend-canvas",
   "version": "1.0.0",
   "description": "extend canvas 2D methods",
-  "main": "./lib/index.js",
+  "main": "./lib/bundle.js",
   "files": [
     "lib"
   ],
