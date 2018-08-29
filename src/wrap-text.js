@@ -26,7 +26,7 @@ export default function extendCanvas () {
       for (let i = 0; i < wordsLen;) {
         let word = words[i]
         // 按照word-break的break-word原则合并word
-        if (i + 1 < wordsLen && shouldMergeWord(word, word[i + 1])) {
+        if (i + 1 < wordsLen && shouldMergeWord(word, words[i + 1])) {
           words[i + 1] = word + words[i + 1]
           i++
           continue
