@@ -1,0 +1,21 @@
+{
+  "name": "extend-canvas",
+  "version": "1.0.0",
+  "description": "extend canvas 2D methods",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llb421270473/extend-canvas.git"
+  },
+  "keywords": [
+    "canvas",
+    "wrapText"
+  ],
+  "author": "calvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llb421270473/extend-canvas/issues"
+  },
+  "homepage": "https://github.com/llb421270473/extend-canvas#readme"
+}
