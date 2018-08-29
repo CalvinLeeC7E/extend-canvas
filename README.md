@@ -1,6 +1,26 @@
+[![NPM](https://nodei.co/npm/extend-canvas.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/extend-canvas/)
+
 # ExtendCanvas
 
-通过给Canvas 2D模式下拓展方法，从而弥补本身的不足
+Add some useful methods on CanvasRenderingContext2D.prototype
 
 ### features
-* wrapText
+* wrapText:  this method extend fillText，when fixed width it’ll automatic wrap text
+
+### example
+warpText
+
+```javascript
+import extCanvas from 'extend-canvas'
+extCanvas()
+
+let longText = 'this is long long long long long text'
+let canvas = document.createElement('canvas')
+canvas.width = 750
+canvas.height = 1334
+let context = canvas.getContext('2d')
+context.fillStyle = '#000'
+context.font = '48px PingFang SC'
+context.textBaseline = 'hanging'
+context.wrapText(longText, 79, 264, 592, 72)
+```
