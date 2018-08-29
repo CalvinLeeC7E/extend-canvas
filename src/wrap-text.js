@@ -19,14 +19,14 @@ module.exports = function extendCanvas () {
       let symbolReg = /[\。\？\！\，\、\；\：\“\”\‘\'\（\）\《\》\〈\〉\【\】\『\』\「\」\﹃\﹄\〔\〕\…\—\～\﹏\￥]/
       let englishReg = /[a-zA-Z]+/
 
-      function showMergeWord (nowWord, nextWord) {
+      function shouldMergeWord (nowWord, nextWord) {
         return symbolReg.test(nextWord) || (englishReg.test(nowWord) && englishReg.test(nextWord))
       }
 
       for (let i = 0; i < wordsLen;) {
         let word = words[i]
         // 按照word-break的break-word原则合并word
-        if (i + 1 < wordsLen && showMergeWord(word, word[i + 1])) {
+        if (i + 1 < wordsLen && shouldMergeWord(word, word[i + 1])) {
           words[i + 1] = word + words[i + 1]
           i++
           continue
