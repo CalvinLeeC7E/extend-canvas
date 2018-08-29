@@ -2,8 +2,13 @@
   "name": "extend-canvas",
   "version": "1.0.0",
   "description": "extend canvas 2D methods",
-  "main": "index.js",
-  "scripts": {},
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production webpack --config ./build/webpack.config.js --mode=production"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/llb421270473/extend-canvas.git"
@@ -13,9 +18,24 @@
     "wrapText"
   ],
   "author": "calvin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/llb421270473/extend-canvas/issues"
   },
-  "homepage": "https://github.com/llb421270473/extend-canvas#readme"
+  "homepage": "https://github.com/llb421270473/extend-canvas#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^5.4.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
 }
