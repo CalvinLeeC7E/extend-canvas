@@ -5,6 +5,7 @@
 Add some useful methods on CanvasRenderingContext2D.prototype
 
 ### features
+* toLines: make long text to lines
 * wrapText:  this method extend fillText，when fixed width it’ll automatic wrap text
 
 ### example
