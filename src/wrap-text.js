@@ -58,5 +58,6 @@ export default function extendCanvas () {
     lines.forEach((line, index) => {
       this.fillText(line, x, y + lineHeight * index)
     })
+    return lines.length * lineHeight
   }
 }
